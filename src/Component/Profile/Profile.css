@@ -1,0 +1,53 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 60px; */
+  min-height: calc(100vh-366px);
+  /* background-color: aqua; */
+  height: 100%;
+}
+.welcome{
+  font-weight: 800;
+color: #212529a6 !important;
+}
+.welcome span{
+  color: var(--greencolor);
+  display: inline-block;
+  font-size: 33px;
+
+}
+.cartProfile{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.yourcart h4{
+font-size: 40px !important;
+  color: var(--textcolor);
+}
+.yourcart span{
+  color: var(--greencolor);
+  display: inline-block;
+  font-size: 48px;
+
+}
+.thanks{
+  display: flex;
+  justify-content: center;
+  align-items: first start;
+  
+}
+.thanks p{
+font-size: 30px;
+color: var(--greencolor);
+margin-top: 123px;
+line-height: 56px !important;
+font-weight: 900;
+text-align: center;
+}
+.thanks p span{
+  color: var(--textcolor);
+  display: inline;
+}

@@ -1,0 +1,104 @@
+.Home {
+  overflow: hidden;
+}
+
+.sortBy .sortbylink {
+  background-color: var(--textcolor) !important;
+  border: none;
+  color: #fff;
+}
+.sortBy .dropdown-item {
+  transition: all ease 0.5s;
+}
+.sortBy .dropdown-item:hover {
+  background-color: var(--textcolor) !important;
+  transform: scale(0.8);
+}
+.Home .item {
+  background-color: #fff;
+  transition: 0.8s all ease;
+  border-radius: 10px;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.Home .item:hover {
+  box-shadow: 0 10px 30px 0 rgba(31, 34, 120, 0.1);
+}
+.upperHome img {
+  transition: all 0.5s ease;
+}
+.Home .item:hover .upperHome img {
+  transform: scale(0.8);
+}
+.Home .item:hover .upperHome h5 {
+  color: black;
+  transform: scale(0.8);
+}
+.Home .score {
+  background-color: #ff000073;
+  border-radius: 10px;
+  color: #fff;
+}
+.Home .item:hover .score {
+  background-color: red;
+}
+.homedivImg {
+  /* background: aqua; */
+  width: 80%;
+  margin: auto;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.homedivImg img {
+  /* margin-right: 40px; */
+}
+.coverfixed {
+  background-image: url("../../images/front-view-young-male-holding-little-packages-sale-writing-yellow-background-gift-christmas-holiday-shopping-color.jpg");
+  height: 80vh;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* .item .productPrice{
+    font-size: 25px;
+    font-weight: 800;
+    position: absolute;
+    bottom: -22%;
+    left: 26%;
+} */
+.lower .btn-success {
+  display: none !important;
+  width: 100% !important;
+  position: absolute;
+  bottom: 27px;
+  left: 0px;
+  z-index: 9999;
+  background-color: var(--greencolor) !important;
+  border: none;
+}
+.addtocart {
+  display: block;
+}
+.item:hover .btn-success {
+  display: block !important;
+}
+.page2 {
+  width: 40px;
+  text-align: center;
+  margin: auto;
+  background-color: var(--greencolor) !important;
+  color: #fff !important;
+}
+.nextpage {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.nextpage .fa-solid {
+  color: var(--textcolor);
+}

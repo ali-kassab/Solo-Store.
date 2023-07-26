@@ -1,0 +1,14 @@
+.slider {
+  /* position: relative; */
+  width: 97% !important;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--btncolor);
+}
+.intro img{
+  width: 40px;
+}

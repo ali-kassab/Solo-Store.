@@ -1,0 +1,26 @@
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (max-width: 555px) {
+  .lastfooter {
+    background-color: aqua;
+  }
+  .leftfooter .btn {
+    font-size: 9px;
+  }
+  .leftfooter h6 {
+    font-size: 9px;
+  }
+}
+
+.oulet {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}

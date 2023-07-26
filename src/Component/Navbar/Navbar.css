@@ -1,0 +1,72 @@
+.navchangecolor {
+  color: #fff !important;
+  background-color: var(--btncolor);
+}
+.navbar{
+  overflow: hidden !important;
+  width: 100%;
+}
+.navbar-nav .nav-link.active{
+    color: var(--greencolor) !important;
+}
+.navbar-brand {
+  margin: auto;
+  width: 150px;
+}
+.navbar-brand .s {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 1;
+  display: inline-block;
+}
+.navbar-brand .o,
+.navbar-brand .l,
+.navbar-brand .o2 {
+  display: inline-block;
+}
+.navbar-brand:hover {
+  color: #dc4e69 !important;
+}
+
+.navbar {
+  position: sticky !important;
+  top: 0;
+  z-index: 999999;
+  width: 100%;
+}
+.navbar ul li a {
+  font-weight: 600;
+  position: relative;
+}
+.navbar ul li a:hover {
+  color: var(--greencolor);
+}
+.text-color {
+  color: red !important;
+}
+/* .textUnderLine::before{
+content: "" !important;
+position: absolute !important;
+color: var(--greencolor) !important;
+height: 2px;
+width: 10px;
+top: 10px;
+z-index: 9999999999999999999999999;
+} */
+.navbar .navbar-brand {
+  font-weight: 800;
+  color: var(--greencolor);
+}
+
+.navbar .fa-regular,
+.navbar .fa-solid {
+  color: var(--greencolor);
+}
+.numberofitem{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+  color: #dc4e69;
+}
