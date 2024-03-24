@@ -7,10 +7,12 @@ import '../Regester/Regester.css'
 export default function Regester() {
 
 
-  const navigate = useNavigate();
 
+
+
+  const navigate = useNavigate();
   async function getapi(obj) {
-    console.log(obj);
+    console.log('obj', obj);
     try {
       let { data } = await axios.post('https://ecommerce.routemisr.com/api/v1/auth/signup', obj)
       console.log(data);
@@ -47,7 +49,6 @@ export default function Regester() {
       getapi(values)
     },
 
-
     validate: function (values) {
       let errors = {};
       if (values.name.length < 3 || values.name.length > 18) {
@@ -70,6 +71,7 @@ export default function Regester() {
       return errors   // <= <= <= <=  <= <= <= <= <= <= <= <= <= <= <= <=  <= <= <= <= <= <= <= <= <= <= <= <=  <= <= <= <= <= <= <= <=
     }
 
+
   })
 
 
@@ -80,12 +82,15 @@ export default function Regester() {
       <div className='layer'>
         <div className="container regesterbackground ">
 
-          <div style={{ "display": "none" }} className='alert alert-danger text-center errorclass'>already in use </div>
-          <div style={{ "display": "none" }} className='alert alert-success text-center goodclass'> congratulation </div>
+
+
+          <div style={{ "display": "none" }}
+            className='alert alert-danger text-center errorclass'>already in use </div>
+          <div style={{ "display": "none" }}
+            className='alert alert-success text-center goodclass'> congratulation </div>
+
+
           <form onSubmit={formik.handleSubmit} className='my-3' action="">
-
-
-
             <label htmlFor="name">name : </label>
             <input onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.name} id='name' placeholder='name' className='form-control mb-3' type="text" />
             {formik.errors.name && formik.touched.name ? <div className='alert  alert-danger text-center'>{formik.errors.name}</div> : ""}
@@ -106,7 +111,7 @@ export default function Regester() {
             <input onBlur={formik.handleBlur} onChange={formik.handleChange} value={formik.values.rePassword} id='rePassword' placeholder='rePassword' className='form-control mb-3' type="password" />
             {formik.errors.rePassword && formik.touched.rePassword ? <div className='alert  alert-danger text-center'>{formik.errors.rePassword}</div> : ""}
 
-            <button type='submit'className='btn '>Regester</button>
+            <button type='submit' className='btn'>Regester</button>
 
           </form>
         </div>

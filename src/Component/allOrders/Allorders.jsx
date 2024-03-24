@@ -40,7 +40,7 @@ export default function Allorders({ userdata }) {
                         <div className='border border-3'>
                             <div className='container'>
                                 <div className="row">
-                                    {pro.cartItems.map((item, index) => {
+                                    {pro.cartItems?.map((item, index) => {
                                         return <div key={index} className="col-sm-6">
                                             <div className='item'>
 
@@ -57,7 +57,7 @@ export default function Allorders({ userdata }) {
                             <div className='bg-primary  rounded-2 p-3'>
                                 <h5>price:{pro.totalOrderPrice}</h5>
                                 <h5>order type:{pro.paymentMethodType}</h5>
-                                <p>this order was deleverd to({pro.shippingAddress.details}) in ({pro.shippingAddress.city}) for this number({pro.shippingAddress.phone})</p>
+                                <p>this order was deleverd to({pro.shippingAddress?.details}) in ({pro.shippingAddress?.city}) for this number({pro.shippingAddress?.phone})</p>
                             </div>
                         </div>
 

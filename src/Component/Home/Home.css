@@ -1,7 +1,6 @@
 .Home {
   overflow: hidden;
 }
-
 .sortBy .sortbylink {
   background-color: var(--textcolor) !important;
   border: none;
@@ -44,16 +43,12 @@
   background-color: red;
 }
 .homedivImg {
-  /* background: aqua; */
   width: 80%;
   margin: auto;
   height: 300px;
   text-align: center;
   display: flex;
   justify-content: center;
-}
-.homedivImg img {
-  /* margin-right: 40px; */
 }
 .coverfixed {
   background-image: url("../../images/front-view-young-male-holding-little-packages-sale-writing-yellow-background-gift-christmas-holiday-shopping-color.jpg");
@@ -63,13 +58,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
-/* .item .productPrice{
-    font-size: 25px;
-    font-weight: 800;
-    position: absolute;
-    bottom: -22%;
-    left: 26%;
-} */
+
 .lower .btn-success {
   display: none !important;
   width: 100% !important;

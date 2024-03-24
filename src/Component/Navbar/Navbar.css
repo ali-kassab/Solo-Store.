@@ -1,18 +1,25 @@
+.logo {
+  font-size: 24px; 
+  font-weight: bold; 
+  margin-right: 20px; 
+  color: #dc4e69;
+}
 .navchangecolor {
   color: #fff !important;
   background-color: var(--btncolor);
 }
-.navbar{
+.navbar {
   overflow: hidden !important;
-  width: 100%;
 }
-.navbar-nav .nav-link.active{
-    color: var(--greencolor) !important;
+
+.navbar-nav .nav-link.active {
+  color: var(--greencolor) !important;
 }
 .navbar-brand {
   margin: auto;
   width: 150px;
 }
+
 .navbar-brand .s {
   font-weight: 700;
   text-transform: uppercase;
@@ -45,15 +52,7 @@
 .text-color {
   color: red !important;
 }
-/* .textUnderLine::before{
-content: "" !important;
-position: absolute !important;
-color: var(--greencolor) !important;
-height: 2px;
-width: 10px;
-top: 10px;
-z-index: 9999999999999999999999999;
-} */
+
 .navbar .navbar-brand {
   font-weight: 800;
   color: var(--greencolor);
@@ -63,10 +62,36 @@ z-index: 9999999999999999999999999;
 .navbar .fa-solid {
   color: var(--greencolor);
 }
-.numberofitem{
+.numberofitem {
   position: absolute;
   top: 0;
   right: 0;
   font-size: 15px;
   color: #dc4e69;
+}
+@media screen and (max-width: 991px) {
+  .navbar-brand {
+    width: 120px;
+  }
+  .navbar-brand .s {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    width: 100px;
+  }
+  .navbar-brand .s {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .navbar-brand {
+    width: 80px;
+  }
+  .navbar-brand .s {
+    font-size: 20px;
+  }
 }

@@ -18,60 +18,41 @@ import Paymentcash from './Component/Payment/Paymentcash';
 import Onlinepayment from './Component/Payment/Onlinepayment';
 import NextPage from './Component/NextPage/NextPage';
 
-
+// Main component for the application
 export default function App() {
-
-
   window.scroll({ top: 0 })
-
-
-
-
   const [userdata, setuserdata] = useState(null);
 
+  // Function to get user data from token
   function GetuserData() {
-
     let userData = jwtDecode(localStorage.getItem('token'))
-    console.log(userData);
-    console.log('userdataFrom app', userData);
     setuserdata(userData)
-
   }
-  console.log(userdata);
 
-
-
-  function ProtectedRoute({ children }) {                                    // must     1(P not p) 2(return)
-
+  // Protected route component to restrict access to certain routes
+  function ProtectedRoute({ children }) {                              
     if (localStorage.getItem('token') === null) {
-
       return <Navigate to='/Login' />
-    }
-    else {
+    } else {
       return <>{children}</>
     }
-
   }
 
+  // Function to clear user data from local storage
   function Clearuserdata() {
-
     localStorage.removeItem('token')
     setuserdata(null)
-
   }
 
-
-
+  // useEffect to fetch user data on component mount
   useEffect(function () {
-    // GetuserData()
     if (localStorage.getItem('token') != null && userdata === null) {
       GetuserData()
     }
   }, []);
 
-
+  // Router configuration
   const router = createBrowserRouter([
-
     {
       path: "", element: <CartContextProvider><Layout Clearuserdata={Clearuserdata} userdata={userdata} /></CartContextProvider>, children: [
         { path: '', element: <CartContextProvider> <Home /> </CartContextProvider> },
@@ -91,18 +72,13 @@ export default function App() {
         { path: 'sort-by-lowest-price', element: <ProtectedRoute><SortByLowest /></ProtectedRoute> },
         {
           path: '*', element: <div className='text-center'>
-
             <img alt='img' src={require('../src/images/pasted image 0.png')}></img>
           </div>
         },
       ]
     }])
 
-
   return <>
-
     <RouterProvider router={router} />
-
-
   </>
 }
